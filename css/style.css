@@ -18,4 +18,5 @@ body {
 
 li {
     cursor: pointer;
+    list-style: none;
 }
