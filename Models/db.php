@@ -1,6 +1,11 @@
 <?php
+require __DIR__ . '/Generi.php';
 
-$generi = ['Fantascienza - ', 'Fantastico - ', 'Commedia'];
+// $generi = ['Fantascienza - ', 'Fantastico - ', 'Commedia']; // SOLUZIONE CON ARRAY SENZA UTILIZZARE UNA NUOVA CLASSE
+
+$generi = [
+    new Generi('Fantascienza', 'Fantastico', 'Commedia'),
+];
 
 // $movie_1 = new Movie('Ritorno al futuro', 'Fantascienza', 9.5);
 // $movie_2 = new Movie('Harry Potter', 'Fantastico', 10);

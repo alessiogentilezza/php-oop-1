@@ -17,22 +17,18 @@ class Movie
 
     public function getFullInfo()
     {
-        // return $this->titolo . ' - ' . $this->genere . $this->voto;
-        return 'Titolo: '.$this->titolo .
-        '<br />' . 'Generi: '.$this->getFullGeneri() . 
-        '<br />' . 'Voto: '.$this->voto;
+        return 'Titolo: ' . $this->titolo .
+            '<br />' . 'Generi: ' . $this->getFullGeneri() .
+            '<br />' . 'Voto: ' . $this->voto;
     }
 
-    public function getFullGeneri() {
-
+    public function getFullGeneri()
+    {
         $generi = '';
-
-        foreach( $this->generi as $genere ) {
-            $generi .= ' ' . $genere;
+        foreach ($this->generi as $genere) {
+            // $generi .= ' ' . $genere; // SOLUZIONE CON ARRAY SENZA UTILIZZARE UNA NUOVA CLASSE
+            $generi .= $genere->genere1 . ', ' . $genere->genere2 . ', ' . $genere->genere3;
         }
-
         return $generi;
-
     }
-
 }

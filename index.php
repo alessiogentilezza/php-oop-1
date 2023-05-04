@@ -19,21 +19,22 @@ require __DIR__ . '/Models/db.php';
 <body class="ms-black">
     <div class="container">
         <h4>
-            <p> <?php
+            <li> <?php
                     echo $movie_1->getFullInfo();
                     ?>
-            </p>
+            </li>
             <!-- <li> <?php
-                    var_dump($movie_1);
-                    ?>
+                        var_dump($movie_1);
+                        ?>
             </li> -->
-            <p> <?php
+            <br>
+            <li> <?php
                     echo $movie_2->getFullInfo();
                     ?>
-            </p>
+            </li>
             <!-- <li> <?php
-                    var_dump($movie_2);
-                    ?>
+                        var_dump($movie_2);
+                        ?>
             </li> -->
         </h4>
     </div>
