@@ -28,7 +28,7 @@ class Movie
         $generi = '';
 
         foreach( $this->generi as $genere ) {
-            $generi .= ' ' . $genere . ',';
+            $generi .= ' ' . $genere;
         }
 
         return $generi;
