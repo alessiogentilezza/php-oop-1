@@ -1,6 +1,7 @@
 <?php
-require __DIR__ . '/Models/Movie.php';
+require_once __DIR__ . '/Models/Movie.php';
 require __DIR__ . '/Models/db.php';
+
 ?>
 
 <!DOCTYPE html>
@@ -23,19 +24,23 @@ require __DIR__ . '/Models/db.php';
                     echo $movie_1->getFullInfo();
                     ?>
             </li>
-            <!-- <li> <?php
+    <!-- 
+                <li> <?php
                         var_dump($movie_1);
                         ?>
-            </li> -->
+            </li> 
+    -->
             <br>
             <li> <?php
                     echo $movie_2->getFullInfo();
                     ?>
             </li>
-            <!-- <li> <?php
+    <!-- 
+                <li> <?php
                         var_dump($movie_2);
                         ?>
-            </li> -->
+            </li> 
+    -->
         </h4>
     </div>
 </body>

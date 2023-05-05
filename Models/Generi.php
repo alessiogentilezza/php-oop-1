@@ -3,14 +3,10 @@
 class Generi
 {
 
-    public $genere1;
-    public $genere2;
-    public $genere3;
+    public $tipo;
 
-    public function __construct($genere1, $genere2, $genere3)
+    public function __construct($tipo)
     {
-        $this->genere1 = $genere1;
-        $this->genere2 = $genere2;
-        $this->genere3 = $genere3;
+        $this->tipo = $tipo;
     }
 }
